@@ -1,0 +1,211 @@
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import "mixin";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*main code*/
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // font-family: 'Rubik', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    @include title;
+}
+
+.description {
+    @include description;
+}
+
+img {
+    @include hover-img;
+}
+
+/*header*/
+
+header {
+    padding-top: 50px;
+
+    .container {
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .menu {
+                display: flex;
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgb(176, 160, 160);
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 25px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        transition: all 0.1s ease;
+    
+                        &:not(li:last-child) {
+                            margin-right: 30px;
+                        }
+    
+                        &:hover {
+                            color: darkcyan;
+                        }
+                    }
+                }
+            }
+        }
+
+        figure {
+            position: relative;
+            margin-top: 30px;
+            overflow: hidden;
+            height: 600px;
+
+            img {
+                margin-top: -50px;
+            }
+        }
+    }
+}
+
+/*about-village*/
+
+.section-about__village {
+    margin-top: 100px;
+}
+
+/*about trouble*/
+
+.section-about__trouble {
+    .about-trouble {
+        margin-top: 100px;
+
+        .about-trouble__thirdTrouble__description {
+            p {
+                &:not(p:last-child) {
+                    margin-bottom: 10px;
+                }
+                &:not(p:first-child) {
+                    margin-top: 10px;
+                }
+            }
+
+            li {
+                margin-right: 60px;
+                list-style: circle;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*footer*/
+
+footer {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*main code*/
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+.title h1,
+.title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.description p {
+  width: 800px;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+img {
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+}
+
+img:hover {
+  filter: grayscale(0);
+}
+
+/*header*/
+header {
+  padding-top: 50px;
+}
+
+header .container .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .navbar .menu {
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b0a0a0;
+}
+
+header .container .navbar .menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+header .container .navbar .menu li a:not(li:last-child) {
+  margin-right: 30px;
+}
+
+header .container .navbar .menu li a:hover {
+  color: darkcyan;
+}
+
+header .container figure {
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+  height: 600px;
+}
+
+header .container figure img {
+  margin-top: -50px;
+}
+
+/*about-village*/
+.section-about__village {
+  margin-top: 100px;
+}
+
+/*about trouble*/
+.section-about__trouble .about-trouble {
+  margin-top: 100px;
+}
+
+.section-about__trouble .about-trouble .about-trouble__thirdTrouble__description p:not(p:last-child) {
+  margin-bottom: 10px;
+}
+
+.section-about__trouble .about-trouble .about-trouble__thirdTrouble__description p:not(p:first-child) {
+  margin-top: 10px;
+}
+
+.section-about__trouble .about-trouble .about-trouble__thirdTrouble__description li {
+  margin-right: 60px;
+  list-style: circle;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*footer*/
+footer {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

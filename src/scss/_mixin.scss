@@ -1,0 +1,27 @@
+@mixin title {
+    h1,
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+}
+
+@mixin description {
+    p {
+        width: 800px;
+        font-size: 18px;
+        line-height: 1.2em;
+        letter-spacing: 0.05em;
+    }
+}
+
+@mixin hover-img {
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+
+    &:hover {
+        filter: grayscale(0);
+    }
+}

@@ -1,11 +1,22 @@
-@mixin title {
-    h1,
-    h2 {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        margin-top: 30px;
-    }
+@mixin title_h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@mixin title_h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@mixin title_h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 @mixin description {
